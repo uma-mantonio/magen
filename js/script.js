@@ -6,31 +6,19 @@ $(document).ready(function() {
 		ogv: 'assets/magen.ogv',
 		webm: 'assets/magen.webm',
 		poster: 'images/magen-poster.jpg',
-		loop: true,
+		loop: false,
 		scale: true,
 		opacity: 1
 	});
-})
 
-var assemblyVid = document.getElementById('assembly-vid');
-var pauseButton = document.querySelector("#pause-button");
+	var pause = document.getElementsByTagName("video").pause();
+	var play = document.getElementsByTagName("video").play();
 
-function vidFade() {
-	assemblyVid.classList.add('stopfade');
-}
+	function playVid() {
+		play;
+	}
 
-assemblyVid.addEventListener('ended', function() {
-	assemblyVid.pause();
-	vidFade();
-});
-
-pauseButton.addEventListener("click", function() {
-	assemblyVid.classList.toggle("stopfade");
-	if(assemblyVid.paused){
-		assemblyVid.play();
-		pauseButton.innerHTML = "Pause";
-	} else {
-		assemblyVid.pause();
-		pauseButton.innerHTML = "Play";
+	function pauseVid() {
+		pause;
 	}
 })

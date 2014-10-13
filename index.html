@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <button id="pause-button">Pause</button>
+        <button id="pause-button" onclick="pauseVid()">Pause</button>
         </div>
     </section>
 
@@ -124,6 +124,19 @@
     </section>
 
     <a class="navbar-brand page-scroll to-top" href="#page-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+    <script type="text/javascript">
+        var pause = document.getElementsByTagName("video").pause();
+        var play = document.getElementsByTagName("video").play();
+
+        function playVid() {
+            play;
+        }
+
+        function pauseVid() {
+            pause;
+        }
+    </script>
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
