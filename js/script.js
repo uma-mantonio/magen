@@ -11,3 +11,26 @@ $(document).ready(function() {
 		opacity: 1
 	});
 })
+
+var assemblyVid = document.getElementById('assembly-vid');
+var pauseButton = document.querySelector("#pause-button");
+
+function vidFade() {
+	assemblyVid.classList.add('stopfade');
+}
+
+assemblyVid.addEventListener('ended', function() {
+	assemblyVid.pause();
+	vidFade();
+});
+
+pauseButton.addEventListener("click", function() {
+	assemblyVid.classList.toggle("stopfade");
+	if(assemblyVid.paused){
+		assemblyVid.play();
+		pauseButton.innerHTML = "Pause";
+	} else {
+		assemblyVid.pause();
+		pauseButton.innerHTML = "Play";
+	}
+})

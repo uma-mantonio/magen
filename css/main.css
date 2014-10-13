@@ -25,3 +25,9 @@
 .to-top:hover {
 	color: #fff;
 }
+.about-section {
+	background-color: green;
+}
+.contact-section {
+	background-color: blue;
+}
