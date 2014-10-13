@@ -6,6 +6,7 @@ $(document).ready(function() {
 		ogv: 'assets/magen.ogv',
 		webm: 'assets/magen.webm',
 		poster: 'images/magen-poster.jpg',
+		loop: true,
 		opacity: 1
 	});
 })
