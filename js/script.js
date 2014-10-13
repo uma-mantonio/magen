@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#intro').videoBG({
+	$('#assembly-vid').videoBG({
 		position: 'fixed',
 		zIndex: 0,
 		mp4: 'assets/magen.mp4',
@@ -7,6 +7,7 @@ $(document).ready(function() {
 		webm: 'assets/magen.webm',
 		poster: 'images/magen-poster.jpg',
 		loop: true,
+		fullscreen: true,
 		opacity: 1
 	});
 })
