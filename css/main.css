@@ -1,11 +1,20 @@
 #assembly-vid {
-	right: 0;
-	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	z-index: -100;
-	background: url("/images/magen-poster.jpg") no-repeat;
-	background-size: cover;
+}
+.section-content {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding-bottom: 20px;
+}
+.to-top {
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	/*padding: 20px;*/
 }
