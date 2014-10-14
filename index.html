@@ -25,18 +25,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-            function vidpause() {
-                var vid = $("video")[0];
-                var button = $("#pause-button");
-                if (vid.paused) {
-                    vid.play();
-                    button.html("Pause");
-                } else {
-                    vid.pause();
-                    button.html("Play");
-                }
-            };
-        </script>
+        function vidpause() {
+            var vid = $("video")[0];
+            var button = $("#pause-button");
+            if (vid.paused) {
+                vid.play();
+                button.html("Pause");
+            } else {
+                vid.pause();
+                button.html("Play");
+            }
+        };
+    </script>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->

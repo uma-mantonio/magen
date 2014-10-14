@@ -6,7 +6,7 @@ $(document).ready(function() {
 		ogv: 'assets/magen.ogv',
 		webm: 'assets/magen.webm',
 		poster: 'images/magen-poster.jpg',
-		loop: false,
+		loop: true,
 		scale: true,
 		opacity: 1
 	});
