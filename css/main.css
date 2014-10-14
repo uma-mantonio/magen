@@ -35,12 +35,14 @@ button#pause-button {
 	border: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 20px;
-	/*border-radius: 100%;*/
 	width: 100px;
 	padding: 11px;;
 	color: #fff;
 	position: fixed;
 	bottom: 20px;
 	right: 80px;
-	/*box-shadow: */
+}
+button#pause-button:hover {
+	background-color: #fff;
+	color: #44B146;
 }
