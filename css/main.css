@@ -37,9 +37,10 @@ button#pause-button {
 	font-size: 20px;
 	/*border-radius: 100%;*/
 	width: 100px;
-	padding: 20px;;
+	padding: 11px;;
 	color: #fff;
 	position: fixed;
 	bottom: 20px;
-	left: 20px;
+	right: 80px;
+	/*box-shadow: */
 }
