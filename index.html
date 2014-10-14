@@ -24,7 +24,19 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script type="text/javascript">
+            function vidpause() {
+                var vid = $("video")[0];
+                var button = $("#pause-button");
+                if (vid.paused) {
+                    vid.play();
+                    button.html("Pause");
+                } else {
+                    vid.pause();
+                    button.html("Play");
+                }
+            };
+        </script>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -79,7 +91,8 @@
                 </div>
             </div>
         </div>
-        <button id="pause-button" onclick="pauseVid()">Pause</button>
+
+        <button id="pause-button" onclick="vidpause()">Pause</button>
         </div>
     </section>
 
@@ -125,21 +138,12 @@
 
     <a class="navbar-brand page-scroll to-top" href="#page-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-    <script type="text/javascript">
-        var pause = document.getElementsByTagName("video").pause();
-        var play = document.getElementsByTagName("video").play();
-
-        function playVid() {
-            play;
-        }
-
-        function pauseVid() {
-            pause;
-        }
-    </script>
-
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- jQuery videoBG -->
+    <script src="js/jquery.videoBG.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -147,10 +151,6 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
-    <!-- jQuery videoBG -->
-    <script src="js/jquery.videoBG.js"></script>
-    <script src="js/script.js"></script>
 
 </body>
 

@@ -10,15 +10,4 @@ $(document).ready(function() {
 		scale: true,
 		opacity: 1
 	});
-
-	var pause = document.getElementsByTagName("video").pause();
-	var play = document.getElementsByTagName("video").play();
-
-	function playVid() {
-		play;
-	}
-
-	function pauseVid() {
-		pause;
-	}
 })
