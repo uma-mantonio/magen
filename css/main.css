@@ -1,4 +1,9 @@
-#assembly-vid {
+section {
+	min-height: 100%;
+}
+#assembly-vid/*,
+.videoBG_wrapper,
+.videoBG*/ {
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
